@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./bantinthoisu1.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Header -->
+        <div class="header">
+          <div class="left-nav">
+              <a href="#" ><i class="fa-solid fa-bars"  style="color: #ffffff;"></i></a>
+              <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+              <a href="thoisu.html">
+                  <h3>THỜI SỰ</h3>
+              </a>
+              <a href="thoitiet.html">
+                  <h3>THỜI TIẾT</h3>
+              </a>
+              <a href="thethao.html">
+                  <h3>THỂ THAO</h3>
+              </a>
+              <a href="thaoluan.html">
+                <h3>THẢO LUẬN</h3>
+            </a>
+          </div>
+          <div class="right-nav">
+            <div id="current-time"></div>
+                <script>
+                    var curDate = new Date();
+                    var days = ['Chủ Nhật,', 'Thứ Hai,', 'Thứ Ba,', 'Thứ Tư,', 'Thứ Năm,', 'Thứ Sáu,', 'Thứ Bảy,'];
+                    var curDayOfWeek = curDate.getDay();
+                    var curDay = curDate.getDate();
+                    var curMonth = curDate.getMonth() + 1;
+                    var curYear = curDate.getFullYear();
+                    document.getElementById('current-time').innerHTML =days[curDayOfWeek]+ " " + curDay + "/" + curMonth + "/" + curYear;
+                </script>
+              <div class="weather-container">
+                  <img id="weather-icon" src="" alt="" style="display: inline-flex">
+                  <span id="temperature"></span>
+              </div>
+              <div id="search-form-container1"></div>
+            <div class="login">
+              <button onclick="" id="login"><a href="./SignIn-SignUp-Form-main/index.html">Login</a></button>
+          </div>
+          </div>
+      </div>
+        <div class="content">
+          <div class="content1">
+            <h1><a href="./thoisu.html" style="font-size: 90%; padding: 12px 0 24px 0">Thời Sự</a></h1>
+            <h3 style="font-size: 260%;">Dự kiến trình Chính phủ nghỉ Tết từ 29/12 Âm lịch</h3>
+            <p style="color: #666666; padding: 16px 0; font-size: 120%">Thứ 3, 17/10/2023 | 18:52:11 [GMT +7]</p>
+            <div class="content1-title">
+              <p>Kỳ nghỉ Tết Giáp Thìn có thể kéo dài 7 ngày, từ 29 tháng chạp Quý Mão đến mùng 5 tháng giêng Giáp Thìn (8-14/2/2024), theo đề xuất của Bộ Lao động Thương binh và Xã hội.</p>
+              <p>Chiều 17/10, ông Mai Đức Thiện, Vụ phó Pháp chế cho biết Bộ Lao động Thương binh và Xã hội đã lấy xong ý kiến về phương án nghỉ Tết Giáp Thìn. "16 đơn vị, bộ ngành đa số đồng tình với phương án 1, tức nghỉ từ 29 tháng chạp", ông nói, thêm rằng cơ quan này sẽ trình Thủ tướng phương án nghỉ 2 ngày trước và 3 ngày sau Tết.</p>
+              <p>Theo phương án này, công chức sẽ đi làm trở lại vào mùng 6 tháng giêng, tức ngày 15/2/2024. Lịch nghỉ này được đánh giá hài hòa, thuận lợi cho người dân mua sắm, đi lại.</p>
+              <img src="https://media.baoquangninh.vn/upload/image/202310/medium/2138364_b5861de9a97224ca546918064dd42f27.jpg" alt="">
+              <br>
+              <img src="https://media.baoquangninh.vn/upload/image/202310/medium/2138365_dd6660bb6bc77364204296d4c84d180d.jpg" alt="">
+              <p>Từ năm 2015 đến nay, phần lớn thời điểm nghỉ luôn cận Tết 1-2 ngày, ngoài Tết Bính Thân 2016 nghỉ từ 28 tháng chạp. Thời gian nghỉ Tết Mậu Tuất 2019 kéo dài 9 ngày, cũng từ 28 Âm lịch do liền kề hai cuối tuần, song thực tế bắt đầu từ 30 tháng chạp nếu tính ngày nghỉ chính thức.</p>
+              <p>Lịch nghỉ Tết Nguyên đán hàng năm áp dụng cho công chức nhà nước, song Bộ Lao động Thương binh và Xã hội khuyến khích doanh nghiệp cho người lao động nghỉ như trên, thông báo trước 30 ngày.</p>
+              <img src="https://media.baoquangninh.vn/upload/image/202310/medium/2138366_52af7651edd6d6ec7a2a437965b6d4fb.jpg" alt="">
+              <p>Việt Nam có 5 kỳ nghỉ lễ, Tết với 11 ngày chính thức trong năm. Nếu ngày lễ rơi vào cuối tuần, lao động sẽ được nghỉ bù vào ngày làm việc kế tiếp, thuận tiện để nghỉ ngơi, về quê hoặc đi du lịch.</p>
+              <p>Người lao động làm thêm giờ, làm việc ban đêm dịp này được hưởng lương ít nhất bằng 300% so với ngày thường. Người nước ngoài làm việc tại Việt Nam ngoài lịch chung được nghỉ thêm một ngày Tết cổ truyền và một ngày Quốc khánh của nước họ.</p>
+            </div>
+          </div>
+          <div class="content2">
+            <a href=""><img src="https://media.baoquangninh.vn/upload/image/202203/medium/1950933_qn_15530016.jpg" alt=""></a>
+            <a href=""><img src="https://media.baoquangninh.vn/upload/image/202309/medium/2127796_bia_nen_09573620.jpg" alt=""></a>
+            <h3 style="font-size: 30px; color: #666666; padding-top: 30px;">Xem Thêm</h3>
+            <div class="content2-1">
+              <a href="bantinthoisu2.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruq65A_uTk4QmGDzI55-sZ-V0/upload/2023/10/17/du-bao-thoi-tiet-tphcm-06375920.jpg" alt=""></a>
+              <a href="bantinthoisu2.html"><h3>Dự báo thời tiết TP.HCM hôm nay ngày 17/10: Đêm có mưa rào và dông</h3></a>
+            </div>
+            <div class="content2-1">
+              <a href="bantinthoisu3.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruov2uVcvUyahsJN4dbRDXIr0/upload/2023/10/16/lu-trong-tung-avar-10343837.png" alt=""></a>
+              <a href="bantinthoisu3.html">
+                <h3>Tin mưa lớn từ chiều ngày 16/10 và dự báo thời tiết 10 ngày tới</h3>
+              </a>
+
+            </div>
+            <div class="content2-1">
+              <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/UyS5Ytevv34Rd93C_Jt1K72rFgkrMngV0/upload/2023/10/17/ronaldo-06545840.jpg" alt=""></a>
+              <a href="bantinthoisu4.html">
+                <h3>Ronaldo lập cú đúp, Bồ Đào Nha chắc ngôi đầu vòng loại EURO 2024</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="middle-content">
+          <div id="comments">
+            <form id="comment-form">
+              <h1 style="margin: 0 0 24px 0;">Ý kiến</h1>
+              <div class="comment-input">
+                <textarea name="" id="comment" cols="100" rows="3" placeholder="Chia sẻ ý kiến của bạn" required></textarea>
+              </div>
+              <button type="submit">Gửi</button>
+            </form>
+            <ul id="comment-list">
+              <li>
+                <div class="comment">
+                  <div class="comment-content">
+                    <h3>abc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquam architecto reprehenderit saepe, deleniti placeat, corporis debitis accusantium dolorem doloribus consequuntur corrupti quis vel omnis quaerat impedit nihil ullam id!</p>  
+                  </div>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích</button>
+                    <button class="reply-btn">Trả lời</button>
+                  </div>
+                  <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="Trả lời...">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="comment">
+                  <div class="comment-content">
+                    <h3>abc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquam architecto reprehenderit saepe, deleniti placeat, corporis debitis accusantium dolorem doloribus consequuntur corrupti quis vel omnis quaerat impedit nihil ullam id!</p>  
+                  </div>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích</button>
+                    <button class="reply-btn">Trả lời</button>
+                  </div>
+                  <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="Trả lời...">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="comment">
+                  <div class="comment-content">
+                    <h3>abc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquam architecto reprehenderit saepe, deleniti placeat, corporis debitis accusantium dolorem doloribus consequuntur corrupti quis vel omnis quaerat impedit nihil ullam id!</p>  
+                  </div>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích</button>
+                    <button class="reply-btn">Trả lời</button>
+                  </div>
+                  <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="Trả lời...">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+            <div class="sidebar">
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Cân nhắc bài toán nhập khẩu cát từ Campuchia để làm cao tốc</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/393689317-201613086288318-8810-6184-6192-1697514554.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=isJ0UtjPsSC8C-JMVsJagw" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Trao quyết định bổ nhiệm Thứ trưởng Bộ Khoa học và Công nghệ</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/757885c868bcbfe2e6ad-169751406-7600-2427-1697515315.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=cb2l7SzGc5ksAxTcT0pNdw" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Định kỳ đánh giá đề án xây đường sắt tốc độ cao Bắc Nam</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/16/5-1490090454-680x0-5283-156266-7681-2047-1697466630.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=sCEkwyowmrRBGp6SRop9Nw" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Nguyên nhân mưa lớn dồn dập ở miền Trung, khi nào chấm dứt?</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruodJUdN-JJZbkidn-Cqd1qB0/upload/2023/10/17/mien-trung-mua-to-18594474.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Bảng xếp hạng vòng loại EURO 2024 mới nhất</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rurivf3_X642WitUADJWTt_y0/upload/2023/06/22/euro-2024-08471880.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Tỷ phú Qatar rút lui, Sir Jim Ratcliffe tiến gần thỏa thuận mua Man Utd</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rupfX7XBY8sM8i8GcRATzriQ0/upload/2023/10/15/sha-tu-bo-mu-06424527.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Messi: 'Ronaldo muốn thắng mọi danh hiệu'</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-thethao.vnecdn.net/2023/11/01/Screenshot-2023-11-01-at-16-12-7811-7325-1698830007.png?w=380&h=228&q=100&dpr=2&fit=crop&s=72yY1r4gtr4t4semGLFA7A" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Tranh ao hoa súng được định giá 65 triệu USD'</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-giaitri.vnecdn.net/2023/11/01/top6-1698823735-4284-1698827572.jpg?w=380&h=228&q=100&dpr=2&fit=crop&s=S9fL7VCdD8kWaswqwMyvoA" alt=""></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="footer-section">
+              <h4>Contact Us</h4>
+              <p>Email: info@gmail.com</p>
+              <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+              <div class="footer-section social-media">
+                  <h4>Follow us</h4>
+                  <div class="footer-section social-media-icon">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <div class="gopy">
+                    <button id="open-feedback-button">Góp ý</button>
+                    <div id="feedback-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close-feedback">&times;</span>
+                            <h2 style="padding: 0 0 8px 0; font-size: 200%">Góp ý</h2>
+                            <form>
+                            <input type="text" id="name" placeholder="Tên..." name="name" required>
+                            <br>
+                            <input type="text" id="phone" placeholder="Số điện thoại..." name="phone" required>
+                            <br>
+                            <textarea id="message" placeholder="Nội dung góp ý..." name="message" required style="width: 100%; height: 70px"></textarea>
+                            <br>
+                            <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="information">
+          <h4>Bản quyền được làm bởi M&M </h4>
+      </div>
+    </div>
+    </div>
+
+    <script src="bantinthoisu.js"></script>
+</body>
+</html>

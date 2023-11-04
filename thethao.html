@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thethao.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-nav">
+                <a href="#" ><i class="fa-solid fa-bars"  style="color: #ffffff;"></i></a>
+                <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <a href="thoisu.html">
+                    <h3>THỜI SỰ</h3>
+                </a>
+                <a href="thoitiet.html">
+                    <h3>THỜI TIẾT</h3>
+                </a>
+                <a href="thethao.html">
+                    <h3>THỂ THAO</h3>
+                </a>
+                <a href="thaoluan.html">
+                    <h3>THẢO LUẬN</h3>
+                </a>
+            </div>
+            <div class="right-nav">
+                <div id="current-time"></div>
+                <script>
+                    var curDate = new Date();
+                    var days = ['Chủ Nhật,', 'Thứ Hai,', 'Thứ Ba,', 'Thứ Tư,', 'Thứ Năm,', 'Thứ Sáu,', 'Thứ Bảy,'];
+                    var curDayOfWeek = curDate.getDay();
+                    var curDay = curDate.getDate();
+                    var curMonth = curDate.getMonth() + 1;
+                    var curYear = curDate.getFullYear();
+                    document.getElementById('current-time').innerHTML =days[curDayOfWeek]+ " " + curDay + "/" + curMonth + "/" + curYear;
+                </script>
+                <div class="weather-container">
+                    <img id="weather-icon" src="" alt="" style="display: inline-flex">
+                    <span id="temperature"></span>
+                </div>
+                <div id="search-form-container1"></div>
+                <div class="login">
+                    <button onclick="" id="login"><a href="./SignIn-SignUp-Form-main/index.html">Login</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="headline">
+            <ul>
+                <li><h1><a href="">Thể thao</a></h1></li>
+                <li><a href="">Lịch thi đấu</a></li>
+                <li><a href="">Bóng đá</a></li>
+                <li><a href="">Bóng rổ</a></li>
+                <li><a href="">Tennis</a></li>
+                <li><a href="">Các môn khác</a></li>
+            </ul>
+        </div>
+        <div class="livescore">
+            <button id="prevButton"><i class="fa fa-chevron-circle-left"></i></button>
+            <div class="match">
+                <div class="list-item">
+                    <a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 18:30</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/40.png" alt="">
+                                <p>Liverpool</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/45.png" alt="">
+                                <p>Everton</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                    <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 21:00</p>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/50.png" alt="">
+                            <p>Man City</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/51.png" alt="">
+                            <p>Brighton</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 22:00</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/85.png" alt="">
+                                <p>PSG</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/95.png" alt="">
+                                <p>Strasbourg</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 23:00</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/503.png" alt="">
+                                <p>Torino</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/505.png" alt="">
+                                <p>Inter</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 23:30</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/536.png" alt="">
+                                <p>Sevilla</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/541.png" alt="">
+                                <p>Real Madrid</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 23:30</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/49.png" alt="">
+                                <p>Chelsea</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/42.png" alt="">
+                                <p>Arsenal</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 23:30</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/536.png" alt="">
+                                <p>Sevilla</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/541.png" alt="">
+                                <p>Real Madrid</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        </a>
+                </div>
+                <div class="list-item"><a href="thethao.html">
+                        <p style="padding: 4px 0 12px 4px; color:gray">Thứ 7, 21/10, 23:30</p>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/164.png" alt="">
+                                <p>Mainz</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                        <div class="team">
+                            <div class="team-left">
+                                <img src="https://is.vnecdn.net/objects/teams/157.png" alt="">
+                                <p>Bayern</p>
+                            </div>
+                            <div class="team-right">
+                                
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="list-item"><a href="thethao.html">
+                    <p style="padding: 4px 0 12px 4px; color:gray">CN, 22/10, 02:00</p>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/62.png" alt="">
+                            <p>Sheffield Utd</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/33.png" alt="">
+                            <p>Man Utd</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="list-item"><a href="thethao.html">
+                    <p style="padding: 4px 0 12px 4px; color:gray">CN, 22/10, 02:00</p>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/538.png" alt="">
+                            <p>Celta Vigo</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/530.png" alt="">
+                            <p>Atletico</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="list-item"><a href="thethao.html">
+                <p style="padding: 4px 0 12px 4px; color:gray">CN, 22/10, 05:00</p>
+                <div class="team">
+                    <div class="team-left">
+                        <img src="https://is.vnecdn.net/objects/teams/18310.png" alt="">
+                        <p>Charlotte</p>
+                    </div>
+                    <div class="team-right">
+                        
+                    </div>
+                </div>
+                <div class="team">
+                    <div class="team-left">
+                        <img src="https://is.vnecdn.net/objects/teams/9568.png" alt="">
+                        <p>Inter Miami</p>
+                    </div>
+                    <div class="team-right">
+                        
+                    </div>
+                </div>
+                </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                    <p style="padding: 4px 0 12px 4px; color:gray">CN, 22/10, 17:00</p>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/3678.png" alt="">
+                            <p>SLNA</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/3681.png" alt="">
+                            <p>Viettel</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="list-item">
+                    <a href="thethao.html">
+                    <p style="padding: 4px 0 12px 4px; color:gray">CN, 22/10, 18:00</p>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/3674.png" alt="">
+                            <p>Nam Định</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    <div class="team">
+                        <div class="team-left">
+                            <img src="https://is.vnecdn.net/objects/teams/3675.png" alt="">
+                            <p>Quảng Nam</p>
+                        </div>
+                        <div class="team-right">
+                            
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <button id="nextButton"><i class="fa fa-chevron-circle-right"></i></button>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="content1-img">
+                    <a href="bantinthoisu4.html"><img src="https://i1-thethao.vnecdn.net/2023/10/18/image-jpeg-3343-1697641926.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=zIwIhwGrAuykUQG1LRTsYA" alt=""></a>
+                </div>
+                <div class="content1-article">
+                    <h1 style="font-size: 40px; line-height: 52px; font-weight: 700;"><a href="bantinthoisu4.html" >HLV Martinez: 'Bồ Đào Nha phải tận dụng tối đa kinh nghiệm của Ronaldo'</a></h1>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="story">
+                    <a href=""><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rurWnL5s-NZGySEl3E-0p7uv0/upload/2023/10/15/italy-07194405.jpg" alt=""></a>
+                    <h3><a href="">Vòng loại EURO 2024: Italy giành 3 điểm quan trọng</a></h3>
+                    <p><a href="">Đội tuyển Italy có chiến thắng quan trọng trước khi chạm trán đội tuyển Anh ở lượt trận tới.</a></p>
+                </div>
+                <div class="story">
+                    <a href=""><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rupfX7XBY8sM8i8GcRATzriQ0/upload/2023/10/15/sha-tu-bo-mu-06424527.jpg" alt=""></a>
+                    <h3><a href="">Tỷ phú Qatar rút lui, Sir Jim Ratcliffe tiến gần thỏa thuận mua Man Utd</a></h3>
+                    <p><a href="">Tỷ phú Sheikh Jassim quyết định rút lui khỏi thương vụ mua Man Utd khi hết kiên nhẫn với nhà Glazer..</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="mid-content">
+            <div class="new">
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruop6FI0glp7A-bOdjq76K4M0/upload/2023/10/09/arsenal-man-city-00335607.jpg" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thể thao</a></span>
+                        <h3><a href="">Arsenal đánh bại Man City với tỉ số 1-0 nhờ bàn thắng may mắn của Gabriel Martinelli ở cuối trận.</a></h3>
+                    </div>
+                </div>
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rurkuQDdbWmp3Yw-_QO6siIa0/upload/2023/10/07/mctominay-man-utd-23044904.jpg" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thể thao</a></span>
+                        <h3><a href="">Man Utd vất vả đánh bại Brentford với tỉ số 2-1 nhờ 2 bàn thắng ở phút bù giờ.</a></h3>
+                    </div>
+                </div>
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rurivf3_X642WitUADJWTt_y0/upload/2023/06/22/euro-2024-08471880.jpg" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thể thao</a></span>
+                        <h3><a href="">Bảng xếp hạng vòng loại EURO 2024 mới nhất</a></h3>
+                    </div>
+                </div>
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rurVVVX7x7rqo6ObvBqCjXeM0/upload/2023/09/18/cup-c1-champions-league-13551105.jpg" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thể thao</a></span>
+                        <h3><a href="">Cập nhật bảng xếp hạng Cúp C1 - Champions League mùa giải 2023/2024 mới nhất.</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+              <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+              </div>
+              <div class="footer-section">
+                <div class="footer-section social-media">
+                    <h4>Follow us</h4>
+                    <div class="footer-section social-media-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="gopy">
+                        <button id="open-feedback-button">Góp ý</button>
+                        <div id="feedback-modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close-feedback">&times;</span>
+                                <h2 style="padding: 0 0 8px 0; font-size: 200%">Góp ý</h2>
+                                <form>
+                                <input type="text" id="name" placeholder="Tên..." name="name" required>
+                                <br>
+                                <input type="text" id="phone" placeholder="Số điện thoại..." name="phone" required>
+                                <br>
+                                <textarea id="message" placeholder="Nội dung góp ý..." name="message" required style="width: 100%; height: 70px"></textarea>
+                                <br>
+                                <button type="submit">Gửi</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <h4>Bản quyền được làm bởi M&M </h4>
+        </div>
+    </div>
+    </div>
+
+    <script src="thethao.js"></script>
+</body>
+</html>

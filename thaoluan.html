@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="thaoluan.css">
+</head>
+<body>
+    <div class="header">
+        <div class="left-nav">
+            <a href="#" ><i class="fa-solid fa-bars"  style="color: #ffffff;"></i></a>
+            <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+            <a href="thoisu.html">
+                <h3>THỜI SỰ</h3>
+            </a>
+            <a href="thoitiet.html">
+                <h3>THỜI TIẾT</h3>
+            </a>
+            <a href="thethao.html">
+                <h3>THỂ THAO</h3>
+            </a>
+            <a href="thaoluan.html">
+                <h3>THẢO LUẬN</h3>
+            </a>
+        </div>
+        <div class="right-nav">
+            <div id="current-time"></div>
+            <script>
+                var curDate = new Date();
+                var days = ['Chủ Nhật,', 'Thứ Hai,', 'Thứ Ba,', 'Thứ Tư,', 'Thứ Năm,', 'Thứ Sáu,', 'Thứ Bảy,'];
+                var curDayOfWeek = curDate.getDay();
+                var curDay = curDate.getDate();
+                var curMonth = curDate.getMonth() + 1;
+                var curYear = curDate.getFullYear();
+                document.getElementById('current-time').innerHTML =days[curDayOfWeek]+ " " + curDay + "/" + curMonth + "/" + curYear;
+            </script>
+            <div class="weather-container">
+                <img id="weather-icon" src="" alt="" style="display: inline-flex">
+                <span id="temperature"></span>
+            </div>
+            <div id="search-form-container1"></div>
+            <div class="login">
+                <button id="login"><a href="./SignIn-SignUp-Form-main/index.html">Login</a></button>
+            </div>
+        </div>
+    </div>  
+    <div class="main">
+        <div class="discussion-header">
+            <b>Thảo luận</b>
+        </div>
+        <div class="discussion">
+            <div class="old-discussion">
+                <div class="discuss-item">
+
+                </div>
+            </div>
+        
+            <div class="create-new-discussion">
+                <button id="discussion" >Tạo cuộc thảo luận mới</button>
+                <div id="feedback-modal" class="modal">
+                    <div class="modal-content">
+                    <span class="close" id="close-feedback">&times;</span>
+                    <h2 style="padding: 0 0 8px 0; font-size: 200%">Góp ý</h2>
+                    <form>
+                    <input type="text" id="name" placeholder="Tên..." name="name" required>
+                    <br>
+                    <input type="text" id="phone" placeholder="Số điện thoại..." name="phone" required>
+                    <br>
+                    <textarea id="message" placeholder="Nội dung góp ý..." name="message" required style="width: 100%; height: 70px"></textarea>
+                    <br>
+                    <button type="submit">Gửi</button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: info@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+          </div>
+          <div class="footer-section">
+            <div class="footer-section social-media">
+                <h4>Follow us</h4>
+                <div class="footer-section social-media-icon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="gopy">
+                    <button id="open-feedback-button">Góp ý</button>
+                    <div id="feedback-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="close-feedback">&times;</span>
+                        <h2 style="padding: 0 0 8px 0; font-size: 200%">Góp ý</h2>
+                        <form>
+                        <input type="text" id="name" placeholder="Tên..." name="name" required>
+                        <br>
+                        <input type="text" id="phone" placeholder="Số điện thoại..." name="phone" required>
+                        <br>
+                        <textarea id="message" placeholder="Nội dung góp ý..." name="message" required style="width: 100%; height: 70px"></textarea>
+                        <br>
+                        <button type="submit">Gửi</button>
+                        </form>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="information">
+        <h4>Bản quyền được làm bởi M&M </h4>
+    </div>
+    </div>
+
+    <script src="thaoluan.js"></script>
+</body>
+</html>

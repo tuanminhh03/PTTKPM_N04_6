@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link rel="stylesheet" href="./bantinthoisu1.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Header -->
+        <div class="header">
+          <div class="left-nav">
+              <a href="#" ><i class="fa-solid fa-bars"  style="color: #ffffff;"></i></a>
+              <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+              <a href="thoisu.html">
+                  <h3>THỜI SỰ</h3>
+              </a>
+              <a href="thoitiet.html">
+                  <h3>THỜI TIẾT</h3>
+              </a>
+              <a href="thethao.html">
+                  <h3>THỂ THAO</h3>
+              </a>
+              <a href="thaoluan.html">
+                <h3>THẢO LUẬN</h3>
+            </a>
+          </div>
+          <div class="right-nav">
+            <div id="current-time"></div>
+                <script>
+                    var curDate = new Date();
+                    var days = ['Chủ Nhật,', 'Thứ Hai,', 'Thứ Ba,', 'Thứ Tư,', 'Thứ Năm,', 'Thứ Sáu,', 'Thứ Bảy,'];
+                    var curDayOfWeek = curDate.getDay();
+                    var curDay = curDate.getDate();
+                    var curMonth = curDate.getMonth() + 1;
+                    var curYear = curDate.getFullYear();
+                    document.getElementById('current-time').innerHTML =days[curDayOfWeek]+ " " + curDay + "/" + curMonth + "/" + curYear;
+                </script>
+              <div class="weather-container">
+                  <img id="weather-icon" src="" alt="" style="display: inline-flex">
+                  <span id="temperature"></span>
+              </div>
+              <div id="search-form-container1"></div>
+              <div class="login">
+                <button onclick="" id="login"><a href="./SignIn-SignUp-Form-main/index.html">Login</a></button>
+            </div>
+          </div>
+      </div>
+        <div class="content">
+          <div class="content1">
+            <h1><a href="./thethao.html" style="font-size: 90%; padding: 12px 0 24px 0">Thể Thao</a></h1>
+            <h3 style="font-size: 260%;">HLV Martinez: 'Bồ Đào Nha phải tận dụng tối đa kinh nghiệm của Ronaldo'</h3>
+            <p style="color: #666666; padding: 16px 0; font-size: 120%">Thứ 3, 17/10/2023 | 18:52:11 [GMT +7]</p>
+            <div class="content1-title">
+              <p>HLV Roberto Martinez đánh giá cao kinh nghiệm của tiền đạo đội trưởng Cristiano Ronaldo trong việc giúp Bồ Đào Nha tiến bộ và hướng tới Euro 2024.</p>
+              <p>"Ronaldo có rất nhiều kinh nghiệm và chúng tôi cần tận dụng tối đa điều đó", Martinez nói ngày 17/10. "Chúng tôi hiểu rất rõ ràng về những gì cần làm để phát huy tốt nhất từng cầu thủ của đội. Ở cấp độ đội tuyển, các cầu thủ cần thời gian và sự đồng bộ để có lối chơi rõ ràng, từ đó sẽ thi đấu tập thể và chất lượng cá nhân sẽ được cải thiện".</p>
+              <img src="https://i1-thethao.vnecdn.net/2023/10/18/image-jpeg-3343-1697641926.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=-BpOj1pADWbsdnbZH8J1hw" alt="">
+              <p>HLV Martinez chia vui với Ronaldo sau trận thắng chủ nhà Bosnia 5-0 ngày 17/10. Ảnh: EPA</p>
+              <p>Ở hai trận vòng loại Euro 2024 gần nhất, Bồ Đào Nha toàn thắng - 3-2 trên sân nhà trước Slovakia rồi 5-0 trên sân Bosnia, trong đó Ronaldo góp mỗi trận một cú đúp. Hai cú đúp này giúp tiền đạo thuộc biên chế Al Nassr bắt kịp Romelu Lukaku trong cuộc đua Vua phá lưới vòng loại Euro 2024 khi cả hai đều có chín bàn. Ronaldo nâng thành tích cho Bồ Đào Nha lên 127 bàn sau 203 trận và nâng thành tích trong sự nghiệp lên 859 bàn trong 1.188 lần ra sân.
+
+            </p>
+              <p>Ngoài ra, Ronaldo còn cán mốc 40 bàn qua 43 trận và trở thành cầu thủ ghi nhiều bàn nhất trong năm 2023, vượt mặt hai tiền đạo trẻ là Erling Haaland (39 bàn) và Kylian Mbappe (35 bàn). Đây cũng là lần thứ 12 Ronaldo cán mốc 40 bàn trong một năm dương lịch. Anh liên tục tạo thành tích này từ năm 2010 tới 2018, nhưng bị ngắt quãng trong 2 năm 2019 và 2022.</p>
+              <p>Theo báo Tây Ban Nha AS, thay đổi lớn nhất tại tuyển Bồ Đào Nha lúc này là vị thế của Ronaldo so với giai đoạn cuối thời HLV Fernando Santos. Tại World Cup 2022, mối quan hệ giữa Santos và Ronaldo trở nên căng thẳng sau lượt trận cuối gặp Hàn Quốc tại vòng bảng, khi cựu tiền đạo Man Utd tỏ thái độ không hài lòng ở thời điểm bị thay ra.</p>
+              <p>Santos sau đó gạch tên Ronaldo khỏi đội hình xuất phát ở vòng 1/8 gặp Thụy Sĩ và tứ kết gặp Morocco - nơi Bồ Đào Nha thất bại 0-1. HLV Santos sau đó bị Liên đoàn Bóng đá Bồ Đào Nha (FPF) sa thải, dù từng đưa đội tuyển thuộc bán đảo Iberia đến chức vô địch Euro 2016 và Nations League 2019.
+
+            </p>
+              <p>Sau khi tiếp quản vị trí HLV trưởng Bồ Đào Nha, Martinez đã tới Arab Saudi để nói chuyện với Ronaldo. HLV 50 tuổi sau đó triệu tập Ronaldo, vẫn để anh đeo băng thủ quân và nhiều lần ca ngợi học trò là nhân tố quan trọng trong đội.</p>
+              <p>Đáp lại, Ronaldo tỏa sáng để giúp Bồ Đào Nha lần đầu toàn thắng cả tám trận đầu vòng loại một kỳ Euro. Bồ Đào Nha hiện đứng đầu bảng J với 24 điểm, hơn Slovakia tám điểm và chắc chắn giữ ngôi đầu. Ronaldo và đồng đội còn hai trận gặp Liechtenstein vào ngày 16/11 và Iceland ngày 19/11.</p>
+              <img src="https://i1-thethao.vnecdn.net/2023/10/18/Ronaldo-jpeg-5411-1697641926.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=EG_JH5J1wFkGpth7ox-pBw" alt="">
+              <p>Bồ Đào Nha đã giành vé từ trận thắng Slovakia, nhưng vẫn chơi hưng phấn để hạ Bosnia sau đó bốn ngày. Martinez xem việc duy trì mạch thắng tại vòng loại là cách chuẩn bị tốt nhất cho Euro 2024 diễn ra tại Đức. "Trận đấu thắng Bosnia là ví dụ điển hình về sự chăm chỉ, thái độ, sự cam kết của các cầu thủ với với nhiều dấu hiệu quan trọng. Bồ Đào Nha có những cầu thủ chất lượng hàng đầu, nhưng điều quan trọng là tập thể vì một ước mơ chung", HLV 50 tuổi nói thêm.</p>
+              <p>Cùng Bồ Đào Nha sớm đoạt ngôi đầu, Ronaldo đã trở thành cầu thủ đầu tiên trong lịch sử sáu lần vượt qua vòng loại Euro. Nếu góp mặt trong đội hình Bồ Đào Nha tới Đức vào hè 2024, Ronaldo sẽ thành cầu thủ đầu tiên góp mặt trong sáu kỳ Euro. Anh hiện giữ kỷ lục ghi 14 bàn tại giải, gồm hai bàn vào năm 2004, một bàn vào năm 2008, ba bàn vào năm 2012, ba bàn vào năm 2016 và năm bàn vào năm 2020.</p>
+              <p>"Một chiến thắng khác và màn trình diễn tuyệt vời của toàn đội. Vị trí dẫn đầu được đảm bảo và chúng tôi vẫn đang phát triển mạnh mẽ", Ronaldo viết trên Instagram sau trận thắng Bosnia.</p>
+
+            </div>
+          </div>
+          <div class="content2">
+            <a href=""><img src="https://media.baoquangninh.vn/upload/image/202203/medium/1950933_qn_15530016.jpg" alt=""></a>
+            <a href=""><img src="https://media.baoquangninh.vn/upload/image/202309/medium/2127796_bia_nen_09573620.jpg" alt=""></a>
+            <h3 style="font-size: 30px; color: #666666; padding-top: 30px;">Xem Thêm</h3>
+            <div class="content2-1">
+              <a href="bantinthoisu1.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/HUY22961612274548-1697171306-6979-1697534423.jpg?w=680&h=408&q=100&dpr=2&fit=crop&s=b8kLc5ejg3VB4Yu4DVhVjA" alt=""></a>
+              <a href="bantinthoisu1.html"><h3>Dự kiến trình Chính Phủ nghỉ Tết từ 29/12</h3></a>
+            </div>
+            <div class="content2-1">
+              <a href="bantinthoisu2.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruq65A_uTk4QmGDzI55-sZ-V0/upload/2023/10/17/du-bao-thoi-tiet-tphcm-06375920.jpg" alt=""></a>
+              <a href="bantinthoisu2.html">
+                <h3>Dự báo thời tiết TP.HCM hôm nay ngày 17/10: Đêm có mưa rào và dông</h3>
+              </a>
+
+            </div>
+            <div class="content2-1">
+              <a href="bantinthoisu3.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruov2uVcvUyahsJN4dbRDXIr0/upload/2023/10/16/lu-trong-tung-avar-10343837.png" alt=""></a>
+              <a href="bantinthoisu3.html">
+                <h3>Tin mưa lớn từ chiều 16/10 và dự báo thời tiết 10 ngày tới</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="middle-content">
+          <div id="comments">
+            <form id="comment-form">
+              <h1 style="margin: 0 0 24px 0;">Ý kiến</h1>
+              <div class="comment-input">
+                <textarea name="" id="comment" cols="100" rows="3" placeholder="Chia sẻ ý kiến của bạn" required></textarea>
+              </div>
+              <button type="submit">Gửi</button>
+            </form>
+            <ul id="comment-list">
+              <li>
+                <div class="comment">
+                  <div class="comment-content">
+                    <h3>abc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquam architecto reprehenderit saepe, deleniti placeat, corporis debitis accusantium dolorem doloribus consequuntur corrupti quis vel omnis quaerat impedit nihil ullam id!</p>  
+                  </div>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích</button>
+                    <button class="reply-btn">Trả lời</button>
+                  </div>
+                  <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="Trả lời...">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="comment">
+                  <div class="comment-content">
+                    <h3>abc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquam architecto reprehenderit saepe, deleniti placeat, corporis debitis accusantium dolorem doloribus consequuntur corrupti quis vel omnis quaerat impedit nihil ullam id!</p>  
+                  </div>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích</button>
+                    <button class="reply-btn">Trả lời</button>
+                  </div>
+                  <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="Trả lời...">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="comment">
+                  <div class="comment-content">
+                    <h3>abc</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis aliquam architecto reprehenderit saepe, deleniti placeat, corporis debitis accusantium dolorem doloribus consequuntur corrupti quis vel omnis quaerat impedit nihil ullam id!</p>  
+                  </div>
+                  <div class="comment-actions">
+                    <button class="like-btn">Thích</button>
+                    <button class="reply-btn">Trả lời</button>
+                  </div>
+                  <div class="reply-section">
+                    <input type="text" class="reply-input" placeholder="Trả lời...">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+            <div class="sidebar">
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Cân nhắc bài toán nhập khẩu cát từ Campuchia để làm cao tốc</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/393689317-201613086288318-8810-6184-6192-1697514554.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=isJ0UtjPsSC8C-JMVsJagw" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Trao quyết định bổ nhiệm Thứ trưởng Bộ Khoa học và Công nghệ</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/757885c868bcbfe2e6ad-169751406-7600-2427-1697515315.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=cb2l7SzGc5ksAxTcT0pNdw" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Định kỳ đánh giá đề án xây đường sắt tốc độ cao Bắc Nam</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/16/5-1490090454-680x0-5283-156266-7681-2047-1697466630.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=sCEkwyowmrRBGp6SRop9Nw" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Nguyên nhân mưa lớn dồn dập ở miền Trung, khi nào chấm dứt?</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-ruodJUdN-JJZbkidn-Cqd1qB0/upload/2023/10/17/mien-trung-mua-to-18594474.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Bảng xếp hạng vòng loại EURO 2024 mới nhất</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rurivf3_X642WitUADJWTt_y0/upload/2023/06/22/euro-2024-08471880.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Tỷ phú Qatar rút lui, Sir Jim Ratcliffe tiến gần thỏa thuận mua Man Utd</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://cdn-i.vtcnews.vn/resize/CANbelY-rupfX7XBY8sM8i8GcRATzriQ0/upload/2023/10/15/sha-tu-bo-mu-06424527.jpg" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Messi: 'Ronaldo muốn thắng mọi danh hiệu'</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-thethao.vnecdn.net/2023/11/01/Screenshot-2023-11-01-at-16-12-7811-7325-1698830007.png?w=380&h=228&q=100&dpr=2&fit=crop&s=72yY1r4gtr4t4semGLFA7A" alt=""></a>
+                </div>
+              </div>
+              <div class="content3-1">
+                <div class="content3-article">
+                  <a href="bantinthoisu4.html">
+                    <p>Tranh ao hoa súng được định giá 65 triệu USD'</p>
+                  </a>
+                </div>
+                <div class="content3-img">
+                  <a href="bantinthoisu4.html"><img src="https://i1-giaitri.vnecdn.net/2023/11/01/top6-1698823735-4284-1698827572.jpg?w=380&h=228&q=100&dpr=2&fit=crop&s=S9fL7VCdD8kWaswqwMyvoA" alt=""></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h4>About Us</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="footer-section">
+              <h4>Contact Us</h4>
+              <p>Email: info@gmail.com</p>
+              <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+              <div class="footer-section social-media">
+                  <h4>Follow us</h4>
+                  <div class="footer-section social-media-icon">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  <div class="gopy">
+                    <button id="open-feedback-button">Góp ý</button>
+                    <div id="feedback-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" id="close-feedback">&times;</span>
+                            <h2 style="padding: 0 0 8px 0; font-size: 200%">Góp ý</h2>
+                            <form>
+                            <input type="text" id="name" placeholder="Tên..." name="name" required>
+                            <br>
+                            <input type="text" id="phone" placeholder="Số điện thoại..." name="phone" required>
+                            <br>
+                            <textarea id="message" placeholder="Nội dung góp ý..." name="message" required style="width: 100%; height: 70px"></textarea>
+                            <br>
+                            <button type="submit">Gửi</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      <div class="information">
+          <h4>Bản quyền được làm bởi M&M </h4>
+      </div>
+    </div>
+    </div>
+
+    <script src="bantinthoisu.js"></script>
+</body>
+</html>
