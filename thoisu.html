@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="thoisu.css">
+    <link rel="stylesheet" href="./font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-nav">
+                <a href="#" ><i class="fa-solid fa-bars"  style="color: #ffffff;"></i></a>
+                <a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <a href="thoisu.html">
+                    <h3>THỜI SỰ</h3>
+                </a>
+                <a href="thoitiet.html">
+                    <h3>THỜI TIẾT</h3>
+                </a>
+                <a href="thethao.html">
+                    <h3>THỂ THAO</h3>
+                </a>
+                <a href="thaoluan.html">
+                    <h3>THẢO LUẬN</h3>
+                </a>
+            </div>
+            <div class="right-nav">
+                <div id="current-time"></div>
+                <script>
+                    var curDate = new Date();
+                    var days = ['Chủ Nhật,', 'Thứ Hai,', 'Thứ Ba,', 'Thứ Tư,', 'Thứ Năm,', 'Thứ Sáu,', 'Thứ Bảy,'];
+                    var curDayOfWeek = curDate.getDay();
+                    var curDay = curDate.getDate();
+                    var curMonth = curDate.getMonth() + 1;
+                    var curYear = curDate.getFullYear();
+                    document.getElementById('current-time').innerHTML =days[curDayOfWeek]+ " " + curDay + "/" + curMonth + "/" + curYear;
+                </script>
+                <div class="weather-container">
+                    <img id="weather-icon" src="" alt="" style="display: inline-flex">
+                    <span id="temperature"></span>
+                </div>
+                <div id="search-form-container1"></div>
+                <div class="login">
+                    <button onclick="" id="login"><a href="./SignIn-SignUp-Form-main/index.html">Login</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="headline">
+            <ul>
+                <li><h1><a href="">Thời sự</a></h1></li>
+                <li><a href="">Chính trị</a></li>
+                <li><a href="">Dân sinh</a></li>
+                <li><a href="">Lao động - Việc làm</a></li>
+                <li><a href="">Giao thông</a></li>
+                <li><a href="">Quỹ hy vọng</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="content1">
+                <div class="content1-img">
+                    <a href="bantinthoisu1.html"><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/HUY22961612274548-1697171306-6979-1697534423.jpg?w=680&h=408&q=100&dpr=2&fit=crop&s=b8kLc5ejg3VB4Yu4DVhVjA" alt="" ></a>
+                </div>
+                <div class="content1-article">
+                    <h1 style="font-size: 40px; line-height: 52px; font-weight: 700; margin: 0 0 8px 0;"><a href="bantinthoisu1.html">Dự kiến trình Chính phủ nghỉ Tết từ 29/12 Âm lịch</a></h1>
+                    <p><a href="">Kỳ nghỉ Tết Giáp Thìn có thể kéo dài 7 ngày, từ 29 tháng chạp Quý Mão đến mùng 5 tháng giêng Giáp Thìn (8-14/2/2024), theo đề xuất của Bộ Lao động Thương binh và Xã hội.</a></p>
+                </a>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="story">
+                    <div class="content2-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/py-1697517748-3988-1697517782.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=6N32BqS3v6cpfflc3vs1Vg" alt=""></a>
+                    </div>
+                    <div class="content2-article">
+                        <h3><a href="">Lương tối thiểu có thể không kịp điều chỉnh vào ngày 1/1/2024</a></h3>
+                        <p><a href="">Hội đồng Tiền lương quốc gia dự kiến khởi động lại thương lượng tăng ...</a></p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="content2-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/a15-1697518995-1697522862.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=s52UxK0MCOCZOF94un6tJg" alt=""></a>
+                    </div>
+                    <div class="content2-article">
+                        <h3><a href="">Rốn lũ Đà Nẵng lại ngập gần một mét</a></h3>
+                        <p><a href="">Sau một ngày nước rút, sáng nay lũ lại dâng cao gần một mét khiến hàng nghìn người dân phường Hòa Khánh Nam, quận Liên Chiểu phải di dời.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="story">
+                    <div class="content2-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/z4790975692308-260fb91af15ef07-9974-1867-1697520534.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=0wh4wG7Op2uUZUlfqOuqZw" alt=""></a>
+                    </div>
+                    <div class="content2-article">
+                        <h3><a href="">Quỹ bảo hiểm tai nạn lao động 'thu nhiều chi ít'</a></h3>
+                        <p><a href="">Chuyên gia cho rằng mỗi năm quỹ bảo hiểm tai nạn lao động thu 6.000 tỷ đồng, song chi ra 1.000 tỷ đồng</a></p>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="content2-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/anh-10-1697528616-1658-1697529115.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=JRLZw-IObKwbvRnFFzEeNQ" alt=""></a>
+                    </div>
+                    <div class="content2-article">
+                        <h3><a href="">Đề nghị làm rõ cơ sở đề xuất 350.000 tỷ đồng chấn hưng văn hóa</a></h3>
+                        <p><a href="">Bộ Kế hoạch và Đầu tư đề nghị làm rõ cơ sở, phương pháp ...</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-content">
+            <div class="new">
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/393689317-201613086288318-8810-6184-6192-1697514554.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=isJ0UtjPsSC8C-JMVsJagw" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thời sự</a></span>
+                        <h3><a href="">Cân nhắc bài toán nhập khẩu cát từ Campuchia để làm cao tốc</a></h3>
+                        <p><a href="">Cát nhập khẩu từ Campuchia có thể làm vật liệu san lấp cao tốc, song cần cân nhắc bài toán kinh tế do chi phí vận chuyển lớn, theo Vụ Vật liệu xây dựng, Bộ Xây dựng. </a></p>
+                    </div>
+                </div>
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/757885c868bcbfe2e6ad-169751406-7600-2427-1697515315.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=cb2l7SzGc5ksAxTcT0pNdw" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thời sự</a></span>
+                        <h3><a href="">Trao quyết định bổ nhiệm Thứ trưởng Bộ Khoa học và Công nghệ</a></h3>
+                        <p><a href="">Sáng 17/10, Bộ trưởng Khoa học và Công nghệ Huỳnh Thành Đạt trao quyết định của Thủ tướng bổ nhiệm ông Trần Hồng Thái giữ chức Thứ trưởng. </a></p>
+                    </div>
+                </div>
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/16/5-1490090454-680x0-5283-156266-7681-2047-1697466630.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=sCEkwyowmrRBGp6SRop9Nw" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thời sự</a></span>
+                        <h3><a href="">Định kỳ đánh giá đề án xây đường sắt tốc độ cao Bắc Nam</a></h3>
+                        <p><a href="">Ban chỉ đạo đề án đầu tư đường sắt tốc độ cao Bắc Nam họp định kỳ ba tháng một lần nhằm đánh giá tình hình thực hiện nhiệm vụ và xử lý vướng mắc.</a></p>
+                    </div>
+                </div>
+                <div class="new-story">
+                    <div class="new-img">
+                        <a href=""><img src="https://i1-vnexpress.vnecdn.net/2023/10/17/cong-khu-dan-cu-8505-169750042-6264-9725-1697502018.jpg?w=240&h=144&q=100&dpr=2&fit=crop&s=nONV1GnSmDXrBSk9bfcCyw" alt=""></a>
+                    </div>
+                    <div class="new-article">
+                        <span><a href="" style="color: gray; font-weight: bold;" >Thời sự</a></span>
+                        <h3><a href="">2 người chết, 13 ngư dân mất tích do chìm tàu</a></h3>
+                        <p><a href="">Mưa lớn ba ngày qua khiến nhiều khu dân cư ở huyện Bình Sơn bị ngập, một số nơi bị sạt lở phải di dời dân.</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="sidebar-ads">
+                    <a href=""><img src="https://media.baoquangninh.vn/upload/image/202203/medium/1950933_qn_15530016.jpg" alt=""></a>
+                </div>
+                <div class="sidebar-ads2">
+                    <a href=""><img src="https://media.baoquangninh.vn/upload/image/202309/medium/2127796_bia_nen_09573620.jpg" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+              <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: info@gmail.com</p>
+                <p>Phone: 123-456-7890</p>
+              </div>
+              <div class="footer-section">
+                <div class="footer-section social-media">
+                    <h4>Follow us</h4>
+                    <div class="footer-section social-media-icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="gopy">
+                        <button id="open-feedback-button">Góp ý</button>
+                        <div id="feedback-modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close-feedback">&times;</span>
+                                <h2 style="padding: 0 0 8px 0; font-size: 200%">Góp ý</h2>
+                                <form>
+                                <input type="text" id="name" placeholder="Tên..." name="name" required>
+                                <br>
+                                <input type="text" id="phone" placeholder="Số điện thoại..." name="phone" required>
+                                <br>
+                                <textarea id="message" placeholder="Nội dung góp ý..." name="message" required style="width: 100%; height: 70px"></textarea>
+                                <br>
+                                <button type="submit">Gửi</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="information">
+            <h4>Bản quyền được làm bởi M&M </h4>
+        </div>
+    </div>
+    </div>
+
+    <script src="thoisu.js"></script>   
+</body>
+</html>

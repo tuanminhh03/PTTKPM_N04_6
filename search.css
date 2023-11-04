@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main{
+    margin: 0 auto;
+    /* width: 100%; */
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+i{
+    margin: 0 30px;
+    padding-top: 7px;
+}
+.header a{
+    margin: 0 30px;
+    text-decoration: none;
+    color: white;
+}
+.left-nav{
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    width: 60%;
+    flex-basis: 70%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333; /* Màu chữ ban đầu */
+    display: inline-block;
+    position: relative;
+}
+.left-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px; /* Độ dài của dấu gạch */
+    background-color: #333; /* Màu của dấu gạch */
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); /* Kéo dấu gạch về 0 chiều rộng ban đầu */
+    transform-origin: right;
+    transition: transform 0.3s ease; /* Hiệu ứng hover mượt mà trong 0.3s */
+}
+
+a:hover::after {
+    transform: scaleX(1); /* Kéo dấu gạch về chiều rộng 100% khi hover */
+    transform-origin: left;
+}
+
+a:hover {
+    color: #5f5f5f; /* Màu chữ khi hover */
+}
+
+
+
+
+.right-nav{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.weather-container{
+    display: flex;
+    position: relative;
+}
+.weather-container span{
+    display: inline-flex;
+    color: white;
+    align-items: center;
+}
+.weather-container img{
+    width: 35%;
+}
+
+
+#search-container{
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 280px;
+    height: 30px;
+}
+#searchInput {
+    padding: 8px ;
+    border: 0px;
+    outline: 0;
+    border-radius: 3px;
+    background: transparent;
+}
+
+#searchBtn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#searchBtn i{
+    margin: 0 8px 0 0;
+    padding: 0;
+}
+.news-article a {
+    text-decoration: none;
+    color: black;
+}
+#search-results{
+    top: 40px;
+    border-radius: 12px;
+    z-index: 200;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+
+.gopy{
+    padding: 8px 0 0 20px;
+}
+
+.login{
+    padding: 10px 12px 0 24px;
+    font-size: 90%;
+    width: 40%;
+}
+
+.gopy label{
+    padding: 0 24px 0 0;
+    font-size: 120%;
+}
+#login{
+    background-color: #000000;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 100%;
+}
+
+#open-feedback-button {
+    background-color: #333;
+    color: white;
+    border: 1px solid white;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 100%;
+}
+  
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content {
+    background-color: #efefef;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.gopy input{
+    width: 100%;
+    padding: 0 0 0 6px;
+    margin: 10px 0;
+    height: 40px;
+    font-size: 130%;
+    outline: 0;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 6px;
+}
+.gopy textarea{
+    width: 100%;
+    padding: 0 0 0 6px;
+    margin: 10px 0;
+    outline: 0;
+    font-size: 160%;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 6px;
+}
+.modal-content button{
+    width: 20%;
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #d9d6d6;
+    margin-top: 8px;
+}
+.modal-content button:hover{
+    background-color: #bebebe;
+}
+
+
+
+
+.content{
+    margin: 20px 24px 0 24px;
+    display: flex;
+}
+#search-form-container1{
+    margin: 24px 0 12px 12px;
+}
+#search-term{
+    width: 80%;
+    margin: 0 12px 0 0;
+    height: 40px;
+    font-size: 120%;
+    padding: 0 0 4px 8px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    outline: 0;
+}
+#search-form button{
+    height: 40px;
+    border-radius: 12px;
+    border: 1px solid rgb(183, 183, 183);
+    cursor: pointer;
+    width: 7.3%;
+    font-size: 120%;
+}
+#category-select{
+    margin: 12px 0 0 0px;
+    font-size: 100%;
+    border-radius: 12px;
+    padding: 4px;
+    outline: 0;
+}
+#category-select option{
+    margin: 12px 0 0 12px;
+    font-size: 100%;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+
+.result{
+    flex-basis: 70%;
+}
+
+
+#search-results-container {
+    margin: 16px;
+    font-size: 110%;    
+}
+
+
+.sidebar img{
+    width: 100%;
+    opacity: 1; /* Đặt opacity ban đầu thành 0 */
+    animation: fadeIn 2s ease-in-out; 
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; 
+    }
+    to {
+      opacity: 1; 
+    }
+  }
+
+  
+.news-article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.news-article-content{
+    flex-basis: 70%;
+}
+.news-article-extra{
+    flex-basis: 30%;
+}
+.news-article a {
+    color: #333;
+    text-decoration: none;
+}
+.news-article img{
+    width: 100%;
+    padding: 0 20px 0 0;
+}
+.news-article a:hover{
+    color: gray;
+
+    transition-duration: 0.2s;
+}
+.news-article-title{
+    margin: 0 0 12px 0;
+}
+.sidebar{
+    flex-basis: 30%;
+}
+
+
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 24px;
+}
+
+.footer-content {
+    display: flex;
+    margin: 0 100px 12px 100px;
+    justify-content: space-around;
+}
+
+.footer-section {
+    margin: 10px;
+    flex-basis: 30%;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section .social-media{
+    margin: 0;
+}
+
+.footer-section .social-media-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.footer a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
